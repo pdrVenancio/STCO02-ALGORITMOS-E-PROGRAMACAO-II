@@ -15,7 +15,13 @@ def ult_dig_prod(a, b):
     last_digit_b = b % 10
     return (last_digit_a * last_digit_b) % 10
 
-
+# Calculamos os últimos dígitos de a e b usando a operação % 10.
+# Multiplicamos os dois últimos dígitos para obter o último dígito do produto.
+# Retornamos esse último dígito.
+# Essa abordagem é mais eficiente porque reduz a complexidade da operação de 
+# multiplicação, focando apenas nos dígitos que realmente importam para determinar 
+# o último dígito do produto. Isso elimina a necessidade de multiplicar números grandes, 
+# o que pode ser muito demorado, especialmente para números com muitos dígitos.
 
 #Não altere o programa daqui para baixo
 random.seed(10)

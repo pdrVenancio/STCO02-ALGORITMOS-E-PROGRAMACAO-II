@@ -18,13 +18,21 @@ import random
 #         lista_qtd_por_digito_final.append(qtd_terminando_em_i)
 #     return lista_qtd_por_digito_final
 
-#Gpeto 12 seg
+
 def conta_digitos_finais(lista):
     lista_qtd_por_digito_final = [0] * 100
     for v in lista:
         ultimo_digito = v % 100
         lista_qtd_por_digito_final[ultimo_digito] += 1
     return lista_qtd_por_digito_final
+
+# Nesta versão, ainda estamos iterando pela lista apenas uma vez. 
+# Ao invés de usar um dicionário, estamos utilizando uma lista para armazenar 
+# as contagens, onde cada posição corresponde a um dígito final (de 0 a 99).
+
+# Essa abordagem direta e simples é eficiente porque evita o uso de estruturas 
+# de dados mais complexas como dicionários e elimina a necessidade de conversão
+# dos valores no final.
 
 #Não altere o programa daqui para baixo
 random.seed(10)
