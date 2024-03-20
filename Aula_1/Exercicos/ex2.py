@@ -9,6 +9,13 @@ def aumenta_fib(lista):
     lista = lista + [next]
     return lista
 
+#gpeto
+# def aumenta_fib(lista):
+#     next = lista[-1] + lista[-2]
+#     lista.append(next)
+#     return lista
+
+
 #Não mexa daqui para baixo
 l = [0, 1]
 for i in range(2, 100000, 1):

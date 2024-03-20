@@ -7,18 +7,24 @@ import random
 #   bem ineficiente, levando quase 40 segundos para executar, uma 
 #   implementação melhor vai gastar menos de 6 segundos. Melhore
 #   essa função e explique.
+
+# def conta_digitos_finais(lista):
+#     lista_qtd_por_digito_final = []
+#     for i in range(0, 100, 1):
+#         qtd_terminando_em_i = 0
+#         for v in lista:
+#             if(v % 100 == i):
+#                 qtd_terminando_em_i = qtd_terminando_em_i + 1
+#         lista_qtd_por_digito_final.append(qtd_terminando_em_i)
+#     return lista_qtd_por_digito_final
+
+#Gpeto 12 seg
 def conta_digitos_finais(lista):
-    lista_qtd_por_digito_final = []
-    for i in range(0, 100, 1):
-        qtd_terminando_em_i = 0
-        for v in lista:
-            if(v % 100 == i):
-                qtd_terminando_em_i = qtd_terminando_em_i + 1
-        lista_qtd_por_digito_final.append(qtd_terminando_em_i)
+    lista_qtd_por_digito_final = [0] * 100
+    for v in lista:
+        ultimo_digito = v % 100
+        lista_qtd_por_digito_final[ultimo_digito] += 1
     return lista_qtd_por_digito_final
-
-
-
 
 #Não altere o programa daqui para baixo
 random.seed(10)

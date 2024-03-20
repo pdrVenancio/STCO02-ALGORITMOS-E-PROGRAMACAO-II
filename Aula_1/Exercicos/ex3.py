@@ -5,9 +5,16 @@ import random
 #Essa implementação está ineficiente e demora 40 segundos para executar
 #   o programa. Uma implementação um pouco melhor pode fazer esse tempo 
 #   cair pela metade. Melhore essa função e explique.
+
+# def ult_dig_prod(a, b):
+#     r = a * b
+#     return r % 10
+
 def ult_dig_prod(a, b):
-    r = a * b
-    return r % 10
+    last_digit_a = a % 10
+    last_digit_b = b % 10
+    return (last_digit_a * last_digit_b) % 10
+
 
 
 #Não altere o programa daqui para baixo
