@@ -20,6 +20,7 @@ import random
 
 
 def conta_digitos_finais(lista):
+#   Cria uma lista contendo 100 elementos, todos com o valor zero.
     lista_qtd_por_digito_final = [0] * 100
     for v in lista:
         ultimo_digito = v % 100
