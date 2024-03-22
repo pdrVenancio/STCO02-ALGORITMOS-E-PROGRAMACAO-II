@@ -4,10 +4,6 @@
 #Essa função recebe uma lista com números de fibonacci e calcula o 
 #   proximo acrescentando na lista original. A função pode modificar 
 #   a lista que recebe na origem.
-def aumenta_fib(lista):
-    next = lista[-1] + lista[-2]
-    lista = lista + [next]
-    return lista
 
 # def aumenta_fib(lista):
 #     next = lista[-1] + lista[-2]
