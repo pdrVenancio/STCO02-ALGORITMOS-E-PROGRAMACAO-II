@@ -201,6 +201,23 @@ combined_dict = {**dict1, **dict2}
 # Obter um valor padrão se a chave não existir
 value = my_dict.get('key', 'default_value')
 
+professor = {
+    'nome' : 'hokama',
+    'sala' : 30,
+    'inst' : 'imc'
+}
+
+p2 = {
+    'sala' : 31,
+    'inst' : 'irn'
+}
+
+print(professor)
+
+professor.update(p2)
+
+print(professor)
+
 #####################################################################
 # Tuplas
 
