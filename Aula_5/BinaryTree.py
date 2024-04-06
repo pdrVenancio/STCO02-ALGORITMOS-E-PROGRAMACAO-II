@@ -20,8 +20,16 @@ class BinaryTree:
 				self.right.put(key, value)
 		return
 		
-	def get(self, key)
-		return value
+	# percorrer a arvore
+	def get_bt(self, key):
+		if self.key == key:
+			return self.value
+		elif self.key > key and self.left is not None:
+			return self.left.get_bt(key)
+		elif self.key < key and self.right is not None:
+			return self.right.get_bt(key)
+		else:
+			return None
 		
 	def print(self):
 		print("(", end='')

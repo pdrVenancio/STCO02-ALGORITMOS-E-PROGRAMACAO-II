@@ -23,15 +23,20 @@ class HashTable:
 			self.slots[position].put(key, value)
 
 	
-		
-	def get(self, key):
+	# percorrer a tabela hash
+	def get_has(self, key):
+		hashValue = self._hash(key)
+		position = hashValue
+		# self.slots[position] é do tipo BinaryTree
+		if self.slots[position] is not None:
+			return self.slots[position].get_bt(key)
 		return None
 		
 	def __setitem__(self, key, value):
 		self.put(key, value)
 	
 	def __getitem__(self, key):
-		return self.get(key)
+		return self.get_has(key)
 		
 		
 
