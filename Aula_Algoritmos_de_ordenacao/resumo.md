@@ -1,5 +1,9 @@
 # Invariante de laço
 
+## Quick-sort O(n log n)
+
+O QuickSort é um algoritmo de ordenação eficiente que utiliza o método "dividir para conquistar". Ele seleciona um elemento como pivô, rearranja os elementos de forma que os menores que o pivô fiquem à esquerda e os maiores à direita, e então recursivamente ordena os subconjuntos. Sua complexidade média é O(n log n), mas pode degradar para O(n^2) em casos raros(quando o pivot é um valor "ruim" sendo o menor ou o maior valor).
+
 ## Marge-sort  O(n log n)
 
 O Marge-sort é um algoritmo de ordenação eficiente que divide recursivamente uma lista não ordenada pela metade, ordena cada metade e depois mescla as duas metades ordenadas. Sua notação O() é O(n log n), o que significa que sua complexidade de tempo é proporcional a n vezes o logaritmo de n, onde n é o número de elementos a serem ordenados. Isso o torna eficiente para grandes conjuntos de dados.
