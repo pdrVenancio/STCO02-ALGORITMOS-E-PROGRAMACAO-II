@@ -1,5 +1,13 @@
 # Invariante de laço
 
+## Teorema 
+
+Todo algoritmo de oredenação baseado em comparação tem um tempo de pior caso O(n log n).
+
+## Tim-sort
+
+len(l) / run ==> é bom ser uma potencia de 2. Assim sabemos o número de niveis que vamos ter. Algoritmo usado quando damos .sort()
+
 ## Quick-sort O(n log n)
 
 O QuickSort é um algoritmo de ordenação eficiente que utiliza o método "dividir para conquistar". Ele seleciona um elemento como pivô, rearranja os elementos de forma que os menores que o pivô fiquem à esquerda e os maiores à direita, e então recursivamente ordena os subconjuntos. Sua complexidade média é O(n log n), mas pode degradar para O(n^2) em casos raros(quando o pivot é um valor "ruim" sendo o menor ou o maior valor).
