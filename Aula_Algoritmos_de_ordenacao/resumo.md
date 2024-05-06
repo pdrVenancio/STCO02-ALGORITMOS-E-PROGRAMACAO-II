@@ -1,12 +1,76 @@
 # Invariante de laço
 
-## Teorema 
+## Teorema
 
 Todo algoritmo de oredenação baseado em comparação tem um tempo de pior caso O(n log n).
 
 ## Tim-sort
 
 len(l) / run ==> é bom ser uma potencia de 2. Assim sabemos o número de niveis que vamos ter. Algoritmo usado quando damos .sort()
+
+## Heap-sort
+
+Ordenação através de fila de prioridade :Pega o maior, coloca na última posição,
+
+pega o segundo maior coloca na penúltima posição.
+
+Implementar o HEAP
+
+    Inserção: O(logn)
+
+    Remoção: O(logn)
+
+    Pick: O(1)
+
+Heap:
+
+    -Árvore binária quase completa
+
+    -Todos os níveis completamente preenchidos menos o último
+
+    -Os elementos do último nível estão o mais a esquerda possível
+
+    -Max heap: O pai sempre é maior que todos os filhos (O q vai ser usado)
+
+    -Min heap: O pai sempre é menor que todos os filhos
+
+O heap, por ser comportado, pode ser organizado em um vetor, de modo que cada índice representa o próximo elemento do heap.
+
+    esq(i) = 2i + 1
+
+    dir(i) = 2i + 2
+
+    pai(i) = floor( (i-1)/2 )
+
+-Se um elemento novo inserido e ele desequilibrar o heap, ele e seu pai devem ser trocados (será uma função recursiva)
+
+COMO FUNCIONA A ORGANIZAÇÂO COM HEAP
+
+-O elemento da raiz é sempre o maior. Retira-se ele e coloca como maior da lista ordenada
+
+-desce_heap: Função que equilibra o heap é chamada
+
+-> Dado um vetor, le-se ele como se fosse heap
+
+-> Organiza o heap recursivamente
+
+    -Todos os elementos do último nível estão de acordo com as regras do heap
+
+    -Olha o penúltimo nível. Se um elemento e seus filhos não são heap, o pai sempre troca com o maior dos filhos
+
+    -Continua assim recursivamente
+
+-> Ao se ter a árvore equilibrada, retira-se o elemento da raiz, o guarda e diminui o tamanho do heap
+
+-> Joga o último elemento do heap como a nova raíz
+
+-> Joga o elemento guardado na última posição do vetor
+
+-> Volta no segundo passo até que o vetor esteja organizado
+
+-HeapSort é garantidamente nlogn e tudo é feito em apenas um vetor
+
+-Porém as constantes deles são muito mais altas que o quickSort, mergeSort e timSort
 
 ## Quick-sort O(n log n)
 

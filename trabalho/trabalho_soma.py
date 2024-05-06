@@ -3,8 +3,9 @@
 # pode ser em dupla
 
 import random
-tamanho = int(input())
-random.seed(tamanho)
+#tamanho = int(input())
+random.seed(2**17)
+tamanho = 2**17
 
 l = []
 
@@ -24,6 +25,6 @@ for i in l:
     complemento = alvo - i
     if  complemento in l:   
         contador = contador + 1
-        print(i, complemento)
+        #print(i, complemento)
     
 print(int(contador/2))

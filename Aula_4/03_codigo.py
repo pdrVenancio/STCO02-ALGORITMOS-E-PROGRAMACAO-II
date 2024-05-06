@@ -23,7 +23,7 @@ class HashTable:
         position = hashValue
         while self.slots[position] != None:
             if self.slots[position].key == key:
-                break #Se a chave jÃ¡ existe vamos atualizar o value
+                break #Se a chave não existe vamos atualizar o value
             position = (position + 1) % self.size
         #colocar ou atualizar na posiÃ§Ã£o position.
         if self.slots[position] == None:
