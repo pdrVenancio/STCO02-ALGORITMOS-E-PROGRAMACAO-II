@@ -1,5 +1,11 @@
 # Invariante de laço
 
+## Problema da seleção O(n)
+
+Buscar o k-ésimo menor elemento .
+
+Usamos o "marge" do quicksort par ir separando a lista para achar o k-ésimo elemnto.
+
 ## Teorema
 
 Todo algoritmo de oredenação baseado em comparação tem um tempo de pior caso O(n log n).
@@ -10,9 +16,7 @@ len(l) / run ==> é bom ser uma potencia de 2. Assim sabemos o número de niveis
 
 ## Heap-sort
 
-Ordenação através de fila de prioridade :Pega o maior, coloca na última posição,
-
-pega o segundo maior coloca na penúltima posição.
+Ordenação através de fila de prioridade :Pega o maior, coloca na última posição, pega o segundo maior coloca na penúltima posição.
 
 Implementar o HEAP
 
