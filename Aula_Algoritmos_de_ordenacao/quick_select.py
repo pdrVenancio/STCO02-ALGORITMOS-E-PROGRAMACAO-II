@@ -5,6 +5,7 @@ import random
 def partition(l, first, last):
     
     r = random.randint(first, last)
+    
     l[first], l[r] = l[r] ,l[first]
     pivot = l[first]
     j = first + 1
@@ -19,7 +20,8 @@ def partition(l, first, last):
 
 def encontra_k(l,first, last, k):
     position_pivot = partition(l, first, last) 
-    print(position_pivot, k)
+    
+    # print(position_pivot, k)    
     if k < position_pivot:
         #pega a lista da direita
         return encontra_k(l, first, position_pivot - 1, k)
